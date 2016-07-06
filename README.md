@@ -11,5 +11,15 @@
     NSArray *VCons = [NSLayoutConstraint constraintsWithVisualFormat:@"V:|[cliper]|" options:0 metrics:nil views:@{@"cliper":cliper}];
     [self.view addConstraints:HCons];
     [self.view addConstraints:VCons];
+    
+    //协议方法，点击菜单按钮回调
+    @protocol CliperViewDelegate <NSObject>
+    
+    @required
+    -(void)didCancelClipImage;
+    -(void)saveClipRegionImage;
+    -(void)didConfirmClipImage;
+    
+    @end
   
 ![image](https://github.com/BackWorld/ZXHImageCliper/blob/master/demo.png)
