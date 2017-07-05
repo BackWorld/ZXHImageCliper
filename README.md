@@ -1,7 +1,8 @@
-##Usage 用法
+## Usage 用法
 将 ZXHImageCliper文件夹 拖入工程即可
 
-##Demo 代码
+## Demo 代码
+```
     //截屏视图类
     CliperView *cliper = [[CliperView alloc]initWithFrame:CGRectMake(0, 0, kViewWidth, kViewHeight)];
     [self.view addSubview:cliper];
@@ -21,5 +22,8 @@
     -(void)didConfirmClipImage;
     
     @end
+    
+    
+```
   
-![image](https://github.com/BackWorld/ZXHImageCliper/blob/master/demo.png)
+![Demo](https://github.com/BackWorld/ZXHImageCliper/blob/master/demo.png)
